@@ -61,12 +61,6 @@ class Detail extends React.Component {
    
   }
 
-  componentDidMount() {
-    var req = require.context("../../public/static/02", false, /.*\.jpg$/);
-    req.keys().forEach(function(key){
-      req(key);
-    });
- }
 
   render() {
     return (
