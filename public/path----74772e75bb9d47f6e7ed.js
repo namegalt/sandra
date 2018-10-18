@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{119:function(t,a){t.exports={data:{site:{siteMetadata:{title:"Hi, I`m Sandra. Contac me"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----74772e75bb9d47f6e7ed.js.map
