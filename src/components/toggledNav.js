@@ -7,7 +7,7 @@ function ToggledNav(props) {
         props.open ? (
             <ToggledNavWrapper>
                 <Link to="/team/" onClick={props.close}>Team</Link>
-                <Link to="/publications/" onClick={props.close}>Publications</Link>
+                <Link to="/press/" onClick={props.close}>Press</Link>
                 <Link to="/projects/" onClick={props.close}>Projects</Link>
             </ToggledNavWrapper>
         ): (
