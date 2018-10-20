@@ -38,8 +38,7 @@ export const Card = styled.div`
     padding: 20px;
 
    >  img {
-        width: 170px;
-        border-radius: 50%;
+       box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     @media (max-width: 600px){
@@ -289,13 +288,10 @@ export const Link = styled.div`
 export const ImageWrapper = styled.div`
     display: flex;
     flex-direction: column;
-
     margin-left: 10%;
     margin-top: 50px;
 
-   
 `
-
 export const CurrentPost = styled.div`
     display: flex;
     flex-direction: row;
@@ -305,9 +301,13 @@ export const CurrentPost = styled.div`
     @media (max-width: 1200px){
         flex-direction: column;
     }
-    
+    img {
+        // min-width: 600px;
+        height: auto;
+    }
 
     p {
+        display: inline-block;
         border: 1px solid black;
         height: 100px;
         margin-left: 30px;
