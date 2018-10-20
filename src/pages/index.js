@@ -11,10 +11,6 @@ import ImagesCards from '../components/imagesCards'
 
 
 const IndexPage = () => (
-    // <Page>
-    //   <Contacts/>
-      
-    // </Page>
       <div>
       <About/>
       <ImagesCards/>

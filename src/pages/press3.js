@@ -8,7 +8,7 @@ import {CurrentPost, GridImages} from '../components/components'
 function importAll(r) {
   return r.keys().map(r);
 }
-const images = importAll(require.context('../../public/static/PORTFOLIO/Liana1/', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../public/static/PRESS/IloveyousoSleeper3/', false, /\.(png|jpe?g|svg)$/));
 
 
 const Detail = (props) => (
