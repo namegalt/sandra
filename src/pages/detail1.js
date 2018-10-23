@@ -16,9 +16,9 @@ const Detail = (props) => (
    
     {images.map((item)=> {
           return (
-            <CurrentPost>
+            // <CurrentPost>
               <img src={item}/>
-            </CurrentPost>
+            // </CurrentPost>
       ) 
         })}
         {console.log(props.location)}

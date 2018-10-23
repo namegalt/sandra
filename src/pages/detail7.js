@@ -10,18 +10,16 @@ function importAll(r) {
 }
 const images = importAll(require.context('../images/PORTFOLIO/MadridAlbaforKseniaKseniaSchnaider7/', false, /\.(png|jpe?g|svg)$/));
 
+const reversedImages = images.reverse()
 
 const Detail = (props) => (
   <GridImages>
    
     {images.map((item)=> {
           return (
-            <CurrentPost>
               <img src={item}/>
-            </CurrentPost>
       ) 
         })}
-        {console.log(props.location)}
   </GridImages>
 )
 

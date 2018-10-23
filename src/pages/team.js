@@ -14,53 +14,38 @@ import telegram from '../images/telegram.svg'
 const team = [
     {
     name: "Sandra Vovk",
-    position: "разработчик",
-    nick: "где, *****, фото?",
-    inst: "https://www.instagram.com/namegalt",
-    fb: "https://www.facebook.com/namegalt",
-    telegram: "https://www.t.me/namegalt",
+    position: "",
     img: sandra
     },
     {
-    name: "Kristina Yesipchuk",
-    position: "UI/UX дизайнер",
-    nick: "девачка-космос",
-    inst: "https://www.instagram.com/karinaostd",
-    fb: "https://www.facebook.com/namegalt",
-    img: kristina
+    name: "Julia Slipchenko",
+    position: "Photographer",
+    img: julia
     },
     {
     name: "Aleksandra Illina",
-    position: "фотограф/менеджер",
-    nick: "милашка",
-    inst: "https://www.instagram.com/san_dora_/",
-    fb: "https://www.facebook.com/sandravovk0?ref=br_rs",
+    position: "Сommunication Director",
     img: alex
     },
     {
-        name: "Julia Slipchenko",
-        position: "фотограф/менеджер",
-        nick: "милашка",
-        inst: "https://www.instagram.com/san_dora_/",
-        fb: "https://www.facebook.com/sandravovk0?ref=br_rs",
-        img: julia
-        },
-
+    name: "Kristina Yesipchuk",
+    position: "Produser",
+    img: kristina
+    },
 ]
 
 function TeamCard() {
     return (
         <Team>
             <a name="team" style={{visibility: "hidden"}}/>
-            <h4>My dream team</h4>
+            <h4>Team</h4>
         <CardWrapper>
             {team.map((item)=> {
                 return (
                 <Card>
                     <img src={item.img}/>
                     <h3>{item.name}</h3>
-                    {/* <h6>{item.position}</h6>
-                    <p>{item.nick}</p> */}
+                    <h6>{item.position}</h6>
                 </Card>
             )
             })}

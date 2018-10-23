@@ -13,6 +13,7 @@ import a7 from '../images/main/7.jpg'
 import a8 from '../images/main/8.jpg'
 import a9 from '../images/main/9.jpeg'
 import a10 from '../images/main/10.jpg'
+import a11 from '../images/main/11.jpg'
 
 
 const works = [
@@ -64,13 +65,20 @@ const works = [
   {
     image: a10,
     detail: 10,
+    text: 'Anna Liza FOR SEA',
+  },
+  {
+    image: a11,
+    detail: 11,
     text: 'Anna',
   }
 ]
 
+const reversedWorks = works.reverse();
+
 const ImagesCards = () => (
        <ImageWrapper>
-        {works.map((item)=> {
+        {reversedWorks.map((item)=> {
                 return (
                   <Link to={`/detail${item.detail}`}>
                       <CurrentPost>

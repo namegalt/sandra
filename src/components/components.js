@@ -37,10 +37,6 @@ export const Card = styled.div`
     margin: 20px 20px 0 10px;
     padding: 20px;
 
-   >  img {
-       box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
     @media (max-width: 600px){
         margin: 20px auto;
     }
@@ -81,7 +77,7 @@ export const HeaderWrapper = styled.div`
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
-    background-color: #f4f7f6;
+    // background-color: #f4f7f6;
 `
 
 export const Logo = styled.div`
@@ -134,7 +130,7 @@ export const ToggledNavWrapper = styled.ul`
     margin: 10px 0;
     text-align: center;
 
-    background-color: #f4f7f6;
+    // background-color: #f4f7f6;
     display: flex;
     flex-direction: column;
 
@@ -208,7 +204,7 @@ export const LongCard = styled.div`
     width: 100%;
     margin-top: 20px;
     padding: 20px;
-    background-color: #fff4f4;
+    // background-color: #fff4f4;
     text-align: center;
 `
 
@@ -288,31 +284,37 @@ export const Link = styled.div`
 export const ImageWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
+    // margin-left: 10%;
     margin-top: 50px;
 
 `
 export const CurrentPost = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 30px;
     justify-content: space-beetwen;
 
-    @media (max-width: 1200px){
-        flex-direction: column;
-    }
     img {
-        // min-width: 600px;
-        height: auto;
+        width: 700px;
+        align-self: center;
+    }
+
+    img:hover {
+        opacity: 0.8;
     }
 
     p {
-        display: inline-block;
+        // display: inline-block;
         border: 1px solid black;
-        height: 100px;
-        margin-left: 30px;
+        // margin-left: 30px;
         align-self: center;
-        padding: 30px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+    }
+    p:hover {
+        background-color: #000;
+        color: #fff;
     }
 `
 
@@ -322,10 +324,26 @@ export const GridImages = styled.div`
     flex-wrap: wrap;
     margin-left: 50px;
 
-    div:nth-child(even){
+    img {
+        width: 600px;
+    }
+
+    img:nth-child(odd){
+        align-self: flex-start;
+        margin-right: 50px;
+
+        @media (max-width: 1200px){
+            align-self: center;
+         }
+    }
+
+    img:nth-child(even){
         align-self: flex-end;
         margin-right: 50px;
-    }
-    
+
+        @media (max-width: 1200px){
+           align-self: center;
+        }
+    }    
 `
 

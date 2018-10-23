@@ -8,14 +8,17 @@ import mail from '../images/mail2.svg'
 const Header = ({ siteTitle }) => (
   <div>
     <HeaderWrapper>
-        <Link to="/">
+       
         <Logo>
+        <Link to="/">
           <p>{siteTitle}</p>
-          <img src={mail}/>
-          </Logo>
-        </Link>
+          </Link>
+          <a href="mailto:aaleksandravovk@gmail.com" ><img src={mail}/></a>
+        </Logo>
+       
       
       <Navigation>
+        <Link to="/">Portfolio</Link>
         <Link to="/team">Team</Link>
         <Link to="/press">Press</Link>
         <Link to="/projects/">My projects</Link>

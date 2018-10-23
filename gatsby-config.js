@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Hi, I`m Sandra. Contac me',
+    title: 'Sandra Vovk',
   },
   plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-styled-components'],
   pathPrefix: `/galt_agency`

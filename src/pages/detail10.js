@@ -8,7 +8,7 @@ import {CurrentPost, GridImages} from '../components/components'
 function importAll(r) {
   return r.keys().map(r);
 }
-const images = importAll(require.context('../images/PORTFOLIO/Anna10/', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../images/PORTFOLIO/AnnaLizaFORSEA10/', false, /\.(png|jpe?g|svg)$/));
 
 
 const Detail = (props) => (
@@ -16,12 +16,9 @@ const Detail = (props) => (
    
     {images.map((item)=> {
           return (
-            <CurrentPost>
               <img src={item}/>
-            </CurrentPost>
       ) 
         })}
-        {console.log(props.location)}
   </GridImages>
 )
 
