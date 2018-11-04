@@ -30,11 +30,11 @@ export const Row = styled.div`
 `
 
 export const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 280px;
-    margin: 20px 20px 0 10px;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    width: 250px;
+    // margin: 20px 20px 0 10px;
     padding: 20px;
 
     @media (max-width: 600px){
@@ -43,9 +43,17 @@ export const Card = styled.div`
 
     background-color: #fff;
 
-
+    div  {
+        height: 200px;
+        border-radius: 50%;
+    }
+    
     h6 {
         margin-bottom: 7px;
+        font-size: 22px;
+        &:hover {
+            color: red;
+        }
     }
 
     p {
@@ -295,7 +303,7 @@ export const CurrentPost = styled.div`
     justify-content: space-beetwen;
 
     img {
-        width: 700px;
+        width: 450px;
         align-self: center;
     }
 
@@ -310,7 +318,9 @@ export const CurrentPost = styled.div`
         align-self: center;
         padding: 10px;
         width: 200px;
+        font-size: 18px;
         text-align: center;
+        font-weight: bold;
     }
     p:hover {
         background-color: #000;
@@ -325,7 +335,7 @@ export const GridImages = styled.div`
     margin-left: 50px;
 
     img {
-        width: 600px;
+        width: 500px;
     }
 
     img:nth-child(odd){

@@ -10,7 +10,7 @@ function importAll(r) {
 }
 const images = importAll(require.context('../images/PORTFOLIO/MadridAlbaforKseniaKseniaSchnaider7/', false, /\.(png|jpe?g|svg)$/));
 
-const reversedImages = images.reverse()
+const reversedImages = images
 
 const Detail = (props) => (
   <GridImages>

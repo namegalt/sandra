@@ -30,7 +30,7 @@ const works = [
   {
     image: a3,
     detail: 3,
-    text: 'I love you so Sleeper',
+    text: '"I love you so" Sleeper',
   },
   {
     image: a4,
@@ -40,7 +40,7 @@ const works = [
   {
     image: a5,
     detail: 5,
-    text: 'Masha, Sofi for Katsurina',
+    text: 'Masha&Sofi for Katsurina',
   },
   {
     image: a6,
@@ -50,7 +50,7 @@ const works = [
   {
     image: a7,
     detail: 7,
-    text: 'Madrid, Alba for Ksenia Ksenia Schnaider',
+    text: 'Madrid, Alba for Ksenia Schnaider',
   },
   {
     image: a8,
@@ -65,7 +65,7 @@ const works = [
   {
     image: a10,
     detail: 10,
-    text: 'Anna Liza FOR SEA',
+    text: 'Anna&Liza FORSEA',
   },
   {
     image: a11,
@@ -74,7 +74,7 @@ const works = [
   }
 ]
 
-const reversedWorks = works.reverse();
+const reversedWorks = works;
 
 const ImagesCards = () => (
        <ImageWrapper>

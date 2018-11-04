@@ -19,9 +19,9 @@ const Header = ({ siteTitle }) => (
       
       <Navigation>
         <Link to="/">Portfolio</Link>
-        <Link to="/team">Team</Link>
         <Link to="/press">Press</Link>
         <Link to="/projects/">My projects</Link>
+        <Link to="/team">Team</Link>
       </Navigation>
     </HeaderWrapper>
     <Drawer>

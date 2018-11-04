@@ -2,8 +2,6 @@ import React from 'react'
 
 import {CurrentPost, GridImages} from '../components/components'
 
-// const location = window.location.href;
-// console.log(location)
 
 function importAll(r) {
   return r.keys().map(r);
@@ -19,7 +17,6 @@ const Detail = (props) => (
               <img src={item}/>
       ) 
         })}
-        {console.log(props.location)}
   </GridImages>
 )
 

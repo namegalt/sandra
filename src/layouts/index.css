@@ -8,6 +8,12 @@ html {
 body {
   margin: 0;
 }
+
+
+.content {
+  min-height: calc(100vh - 100px);
+}
+
 article,
 aside,
 details,

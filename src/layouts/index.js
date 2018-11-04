@@ -7,7 +7,8 @@ import Footer from '../components/footer'
 import './index.css'
 
 const Layout = ({ children, data }) => (
-  <div>
+<div>
+  <div className="content">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -28,8 +29,9 @@ const Layout = ({ children, data }) => (
     >
       {children()}
     </div>
-    <Footer/>
   </div>
+  <Footer/>
+</div>
 )
 
 Layout.propTypes = {

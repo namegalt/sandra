@@ -14,7 +14,7 @@ import telegram from '../images/telegram.svg'
 const team = [
     {
     name: "Sandra Vovk",
-    position: "",
+    position: "Creator",
     img: sandra
     },
     {
@@ -29,7 +29,7 @@ const team = [
     },
     {
     name: "Kristina Yesipchuk",
-    position: "Produser",
+    position: "Producer",
     img: kristina
     },
 ]
@@ -43,7 +43,7 @@ function TeamCard() {
             {team.map((item)=> {
                 return (
                 <Card>
-                    <img src={item.img}/>
+                    <div style={{background: "url(" + item.img + ")", backgroundSize: "cover", backgroundPositionY: "20%"}}/>
                     <h3>{item.name}</h3>
                     <h6>{item.position}</h6>
                 </Card>
