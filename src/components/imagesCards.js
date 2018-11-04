@@ -74,7 +74,7 @@ const works = [
   }
 ]
 
-const reversedWorks = works;
+const reversedWorks = works.reverse();
 
 const ImagesCards = () => (
        <ImageWrapper>
