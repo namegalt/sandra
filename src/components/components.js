@@ -44,13 +44,18 @@ export const Card = styled.div`
     background-color: #fff;
 
     div  {
-        height: 200px;
-        border-radius: 50%;
+        height: 250px;
+        border-radius: 2%;
+    }
+    
+    h3 {
+        margin-top: 10px;
     }
     
     h6 {
         margin-bottom: 7px;
         font-size: 22px;
+        font-weight: normal;
         &:hover {
             color: red;
         }
@@ -219,7 +224,7 @@ export const LongCard = styled.div`
 export const CardWrapper = styled.div`
    display: flex;
    justify-content: space-around;
-   @media (max-width: 600px){
+   @media (max-width: 800px){
        flex-direction: column;
    }
 `
@@ -246,6 +251,7 @@ export const Team = styled.div`
     }
 
     h4 {
+        margin-bottom: 20px;
         font-size: 25px;
     }
 `
@@ -269,7 +275,7 @@ export const SocialWrapper = styled.div`
     justify-content: center;
     padding: 5px 0;
     height: 50px;
-    // margin-top: 20px;
+    margin-top: 10px;
     background-color: #f4f7f6;
 
     a {
@@ -333,6 +339,10 @@ export const GridImages = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
     margin-left: 50px;
+
+    @media (min-width: 1200px){
+        margin: 0 150px;
+    }
 
     img {
         width: 500px;
