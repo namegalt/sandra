@@ -66,6 +66,11 @@ export const Card = styled.div`
     }
 `
 
+export const TextWrapper = styled.div`
+    max-width: 400px;
+    margin: 0 auto;
+`
+
 export const CardAbout = Card.extend`
     width: 33%;
     @media (max-width: 768px){
